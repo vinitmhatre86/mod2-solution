@@ -1,178 +1,81 @@
-.menue{
-	font-size:calc(1.75*18px);
-	font-family: Roboto, sans-serif;
-	padding:20px;
-	margin: 30px;
-	
+h1
+{
+	text-align:center;
 }
- 
- .first-box{
-    font-family: 'Catamaran', sans-serif;
-    line-height: 20px;
-    font-size:18px;
- 	width: 30%;
- 	height:auto;
- 	background-color: pink;
- 	padding:30px 20px 10px 20px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: left;
- 	position: relative;
- 	margin: 10px;
- }
+section
+{	
+	
 
- .second-box{
-    font-family: 'Catamaran', sans-serif;
-    font-size:18px;
-    line-height: 20px;
- 	width: 30%;
- 	height: auto;
- 	background-color: palegreen;
- 	padding:30px 20px 10px 20px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: left;
- 	margin: 10px;
- 	position: relative;
- 	margin: 10px;
- 
- }
- .third-box{
-    font-family: 'Catamaran', sans-serif;
-    font-size:18px;
-    line-height: 20px;
- 	width: 30%;
- 	height: auto;
- 	background-color:khaki;
- 	padding:30px 20px 10px 20px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: left;
- 	margin: 10px;
- 	position: relative;
- 	margin: 10px;
- 
- }
- #chicken{
- 	font-size:calc(1.25*18px);
- 	font-family: 'Catamaran', sans-serif;
-    width: 33.3%;
- 	height: auto;
- 	text-align: center;
- 	background-color:tomato;
- 	padding:2px 10px 2px 10px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: right;
- 	position: absolute;
- 	top: 0px;
- 	right: 0px;
+	padding:10px;
+	
+	box-sizing:border-box;
+	clear:right;
+}
+p
+{	
+	float:right;
+	text-align: center;
+	
+	margin:0;
+	width:30%;
+	border-left: 1px solid black;
+	border-bottom:1px solid black;
+	padding:5px;
+	box-sizing:border-box;
+}
+.col1>p
+{
+	background-color:#FF0000;
+}
+.col2>p
+{
+	background-color:#ADFF2F;
+}
+.col3>p
+{
+	background-color:#87CEFA;
+}
+.col1, .col2, .col3
+{
+	
+		background-color:LightSteelBlue;
+		float:left;
+		width:30%;
+		height:215;
+		border:1px solid black;
+		margin-right:2%;
+		
+		box-sizing:border-box;
+		margin-bottom: 50px;
+}
+.col1
+{
+		margin-left:3%
+}
+.col3
+{
+		margin-right:0;
+}
+@media (max-width:991px) and (min-width:768px){
+.col1, .col2 {
+width:45%;
+}
+.col3{
+width:92%;
+margin-left:3%;
+margin-right:5%;
+}
+.col2 {
+margin-right:0;
 
- 	
- }
- #paneer{
- 	font-size:calc(1.25*18px);
- 	font-family: 'Catamaran', sans-serif;
- 	width: 33.3%;
- 	text-align: center;
- 	height: auto;
- 	background-color: turquoise;
- 	padding:2px 10px 2px 10px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: right;
- 	position: absolute;
- 	top: 0px;
- 	right: 0px;
- 	
- }
- #sushi{
- 	font-size:calc(1.25*18px);
- 	font-family: 'Catamaran', sans-serif;
- 	width: 33.3%;
- 	text-align: center;
- 	height: auto;
- 	background-color: mediumorchid;
- 	padding:2px 10px 2px 10px;
- 	border: 1px solid black;
- 	box-sizing: border-box;
- 	float: right;
- 	position: absolute;
- 	top: 0px;
- 	right: 0px;
+}
+}
+@media (max-width:767px){
+.col1, .col2, .col3{
+width:94%;
+margin-right:3%;
+margin-left:3%;
+}
 
- 	
- }
-/*(992px and above*/
- @media (min-width:992px){
- 	.first-box{
-    width: 30%; 		
-    box-sizing: border-box;
-    margin-left: 1.5%;
- 		
- 	}
- 	.second-box{
- 		width: 30%;
- 		box-sizing: border-box;
- 		margin-right: 1.5%;
- 		margin-left: 1.5%;
- 		
- 	}
- 	.third-box{
- 		width: 30%;
- 		box-sizing: border-box;
- 		margin-right:  1.5%;
- 		
-
- 	}
-
-
- }
-/*between 768px and 991px, inclusively*/
- @media (min-width: 768px)  and  (max-width:991px){
- 	
- 	.first-box{
- 		width: 45%;
- 		box-sizing: border-box;
- 		margin: 10px 5px 10px 27px;
- 		
- 	}
- 	.second-box{
- 		float: right;
- 		width: 45%;
- 		box-sizing: border-box;
- 		margin: 10px 27px 10px 5px;
- 		
- 	}
- 	.third-box{
- 		width: auto;
- 		box-sizing: border-box;
- 		margin: 10px 20px 50px 27px;
- 		clear: both;
-
- 	}
- }
- /* (equal to or less than 767px)*/
- @media(max-width: 767px){
- 	
- 	.first-box{
- 		width: 90%;
- 		box-sizing: border-box;
- 		margin-left:5%;
- 		
- 	}
- 	.second-box{
- 		width: 90%;
- 		box-sizing: border-box;
- 		margin-left:5%;
- 		
- 	}
- 	.third-box{
- 		width: 90%;
- 		box-sizing: border-box;
- 		margin-left:5%;
- 		
-
- 	}
-
- }
+}
+}
